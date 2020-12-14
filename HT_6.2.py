@@ -22,23 +22,23 @@ else - the square of the circle
         a, b = -1, -1
         while a <= 0 or b <= 0:
             print("The length of the sides must me > 0!")
-            a = int(input("Enter a: "))
-            b = int(input("Enter b:"))
+            a = float(input("Enter a: "))
+            b = float(input("Enter b: "))
         print(rectangle_square(a, b))
     elif choice == str(2):
         a, b, c = -1, -1, -1
         while a + b <= c or b + c <= a or a + c <= b or a <= 0 or b <= 0 or c <= 0:
             print("the sum of the length of two sides must be bigger than the length of the 3rd and the length of each side must bigger than 0!")
-            a = int(input("Enter a: "))
-            b = int(input("Enter b: "))
-            c = int(input("Enter c: "))
+            a = float(input("Enter a: "))
+            b = float(input("Enter b: "))
+            c = float(input("Enter c: "))
 
         print(triangle_square(a, b, c))
     else:
         R = -1
         while R <= 0:
             print("The length of the radius must be > 0")
-            R = int(input("Enter R: "))
+            R = float(input("Enter R: "))
         print(circle_square(R))
     n = input("1 - continue, else - exit: ")
     
